@@ -15,3 +15,6 @@ Buka lagi index.html, dan isinya kembali seperti semula. Perubahanmu aman tersim
 Jalankan git status kapan saja kamu ragu. Di tengah konflik, Git menampilkan file mana yang masih bermasalah dan apa langkah berikutnya.
 Kalau merasa berantakan, git merge --abort selalu bisa mengembalikan keadaan seperti sebelum merge atau membatalkan merge dan mengembalikan semuanya seperti sebelum git merge dijalankan.
 Sebelum git add, pastikan tanda <<<<<<<, =======, dan >>>>>>> sudah hilang dari file.
+13. pull request (PR). PR adalah cara mengajukan perubahan dari sebuah branch untuk digabung ke main lewat GitHub. Di dunia kerja, hampir semua perubahan kode masuk lewat PR, karena ada kesempatan meninjau dulu sebelum digabung. Meskipun repository ini milikmu sendiri, kamu tetap bisa berlatih alurnya.
+
+Sekalian kita buat file README.md, yaitu halaman depan repository yang menjelaskan proyekmu.
