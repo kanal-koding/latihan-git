@@ -13,5 +13,5 @@ Buka lagi index.html, dan isinya kembali seperti semula. Perubahanmu aman tersim
 11. git log --oneline = Ini menampilkan daftar commit-mu secara ringkas.
 12. catatan kecil 
 Jalankan git status kapan saja kamu ragu. Di tengah konflik, Git menampilkan file mana yang masih bermasalah dan apa langkah berikutnya.
-Kalau merasa berantakan, git merge --abort selalu bisa mengembalikan keadaan seperti sebelum merge.
+Kalau merasa berantakan, git merge --abort selalu bisa mengembalikan keadaan seperti sebelum merge atau membatalkan merge dan mengembalikan semuanya seperti sebelum git merge dijalankan.
 Sebelum git add, pastikan tanda <<<<<<<, =======, dan >>>>>>> sudah hilang dari file.
