@@ -6,3 +6,8 @@ langkah langkah belajar git
 5. ** git status** = melihat status dari repository di folder.
 6. **git branch** = untuk melihat saat ini berada di cabang mana 
 7. **git switch -c ubah-judul** = Perintah ini membuat branch ubah-judul sekaligus memindahkanmu ke sana.
+8. **git diff** (dijalankan sebelum git add) menampilkan baris mana yang berubah.
+9. git switch main = pindah ke branch main
+Buka lagi index.html, dan isinya kembali seperti semula. Perubahanmu aman tersimpan di branch ubah-judul. Pindah bolak-balik dengan git switch ubah-judul dan git switch main untuk melihatnya sendiri.
+10. git branch -d ubahJudul-tambahParagraf = menghapus branch yang sudah tidak diperlukan
+11. git log --oneline = Ini menampilkan daftar commit-mu secara ringkas.
