@@ -19,3 +19,73 @@ Sebelum git add, pastikan tanda <<<<<<<, =======, dan >>>>>>> sudah hilang dari 
 13. pull request (PR). PR adalah cara mengajukan perubahan dari sebuah branch untuk digabung ke main lewat GitHub. Di dunia kerja, hampir semua perubahan kode masuk lewat PR, karena ada kesempatan meninjau dulu sebelum digabung. Meskipun repository ini milikmu sendiri, kamu tetap bisa berlatih alurnya.
 
 Sekalian kita buat file README.md, yaitu halaman depan repository yang menjelaskan proyekmu.
+
+1. Buat branch dan isi README
+
+Pastikan kamu di main dan sudah sinkron, lalu:
+
+git switch main
+git pull
+git switch -c tambah-readme
+
+Buat file README.md di folder proyek, misalnya:
+
+# Belajar Git
+
+Repository latihan Git dan GitHub.
+Berisi file index.html dan index.js.
+
+Lalu commit:
+
+git add README.md
+git commit -m "tambah README"
+
+2. Push branch ke GitHub
+
+git push -u origin tambah-readme
+
+Opsi -u menghubungkan branch lokal dengan branch di GitHub, jadi lain kali cukup git push.
+
+3. Buat pull request di GitHub
+
+Buka repository di github.com. Biasanya muncul banner kuning bertuliskan Compare & pull request, klik itu. Kalau tidak muncul, buka tab Pull requests lalu New pull request. Pastikan pengaturannya:
+
+base: main
+compare: tambah-readme
+
+Isi judul dan deskripsi singkat tentang apa yang kamu ubah, lalu klik Create pull request.
+
+4. Tinjau perubahan
+
+Buka tab Files changed untuk melihat baris yang ditambah (hijau) dan dihapus (merah). Kamu juga bisa menambahkan komentar pada baris tertentu, cara yang dipakai tim untuk saling mengoreksi kode.
+
+5. Merge pull request
+
+Kembali ke tab Conversation, klik Merge pull request, lalu Confirm merge. Setelah itu GitHub menawarkan tombol Delete branch, klik saja karena branch-nya sudah tidak diperlukan.
+
+6. Sinkronkan kembali ke komputer
+
+Merge tadi terjadi di GitHub, jadi main di komputermu belum tahu. Perbarui dengan:
+
+git switch main
+git pull
+git branch -d tambah-readme
+
+Sekarang README.md sudah ada di main lokalmu, dan tampil sebagai halaman depan repository di GitHub.
+
+# .gitignore dan clone
+touch .gitignore = Buat file .gitignore di folder utama proyek (satu level dengan index.html).
+
+isi didalam file .gitignore dengan = 
+node_modules/
+.env
+*.log
+Thumbs.db
+
+Artinya: abaikan folder node_modules, file .env (biasanya tempat menyimpan kunci rahasia), semua file berakhiran .log, dan file thumbnail bawaan Windows.
+
+buat 2 file di gitbash dengan comment = 
+echo "rahasia" > .env
+echo "tes" > debug.log
+
+git check-ignore -v debug.log =  untuk mengecek mengapa sebuah file diabaikan
