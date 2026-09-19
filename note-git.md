@@ -9,7 +9,8 @@ langkah langkah belajar git
 8. **git diff** (dijalankan sebelum git add) menampilkan baris mana yang berubah.
 9. git switch main = pindah ke branch main
 Buka lagi index.html, dan isinya kembali seperti semula. Perubahanmu aman tersimpan di branch ubah-judul. Pindah bolak-balik dengan git switch ubah-judul dan git switch main untuk melihatnya sendiri.
-10. git branch -d ubahJudul-tambahParagraf = menghapus branch yang sudah tidak diperlukan
+10. git branch -d ubahJudul-tambahParagraf atau git branch -d versi-pertama versi-kedua
+= menghapus branch yang sudah tidak diperlukan
 11. git log --oneline = Ini menampilkan daftar commit-mu secara ringkas.
 12. catatan kecil 
 Jalankan git status kapan saja kamu ragu. Di tengah konflik, Git menampilkan file mana yang masih bermasalah dan apa langkah berikutnya.
